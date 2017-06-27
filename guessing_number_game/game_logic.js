@@ -1,3 +1,5 @@
+//contains all the logics of game
+
 //Game variables
 var mysteryNumber = Math.floor(Math.random() * 100); //Random number generating.
 var playersGuess = 0; //control variable to count player's guess 
