@@ -1,4 +1,4 @@
-//contains all the logics of game
+//contains all the logics of the game
 
 //Game variables
 var mysteryNumber = Math.floor(Math.random() * 100); //Random number generating.
