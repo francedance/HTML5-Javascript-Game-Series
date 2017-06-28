@@ -19,6 +19,24 @@ var button = document.querySelector("button");
 button.style.cursor = "pointer"; //changing curso to pointer when hover
 button.addEventListener("click", clickHandler, false); //event listener for clicking the button
 
+
+//The arrow
+var arrow = document.querySelector("#arrow");
+
+function render()
+{
+  //Position the arrow
+  //Multipy the players guess by 3 to get the
+  //corrent pixel position on the scale
+  if(playersGuess > 99){
+	  //if guess is greater than 99 , don't render arrow position (out of scale bound)
+	  return false
+  }else {
+  arrow.style.left = playersGuess * 6 + "px"; 
+  }
+  // width of scale = 600px, to place an arrow in a right position, ex: guess = 10 , need to tell arrow to point at 60px
+}
+
 //Listen for enter key presses
 window.addEventListener("keydown", keydownHandler, false); //event listener for keydown 
 
@@ -48,6 +66,11 @@ function validateInput()
   {
     output.innerHTML = "Please enter a number."; //message to tell player to enter a number
   }
+  
+  if(playersGuess > 99) {
+	output.innerHTML = "That's not a number between 0 and 99. Try again!" //in case a player inputs number out of 0-99 range hahaha who would? but in case..
+  }
+  
   else
   {
     playGame(); //starting a game
@@ -89,6 +112,9 @@ function playGame()
     gameWon = true;
     endGame();
   }
+  
+   //Update the graphic display
+  render();
 }
 
 function endGame()

@@ -1,80 +1,31 @@
 <!-- Simple number guessing game in HTML5 + Javascript !-->
+<!-- Concept from 'Foundation Game Design with HTML5 & Javascript' by Rex van der Spuy , altered by myself. <!-->
 
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Number guessing game with button</title>
+<title>Number guessing game</title>
 
-<style>
-
-button
-{
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	color: white;
-	padding: 10px 20px;
-	border: 2px solid #000;
-	cursor: pointer;
-	
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;	
-	
-	background:-webkit-linear-gradient(top, blue, white);
-	background:-moz-linear-gradient(top, #a3a3a3, #000);
-	background: linear-gradient(top, #a3a3a3, #000);
-	
-	-webkit-box-shadow: 5px 5px 3px rgba(0,0,0,0);
-	-moz-box-shadow: 5px 5px 3px rgba(0,0,0,0);
-	box-shadow: 5px 5px 3px rgba(0,0,0,0);
-	
-	-webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-
-button:hover
-{
-  background: -webkit-linear-gradient(top, red, white);
-  background: -moz-linear-gradient(top, red, white);
-  background: linear-gradient(top, red, white);
-}
-
-button:active
-{
-  background: -webkit-linear-gradient(top, #858565, #c5c9a9);
-  background: -moz-linear-gradient(top, #858565, #c5c9a9);
-  background: linear-gradient(top, #858565, #c5c9a9);
-}
-
-p
-{
-  font-weight: bold;
-  font-size: 30px;
-
-}
-
-input 
-{
-	width: 400px;
-	height: 30px;
-	font-size: 20px;
-	font-weight: bold;
-
-}
-
-</style>
+<link href="./style.css" rel="stylesheet">
 
 
 </head>
 
 <body>
+	<h1>Simple Number Guessing Game!</h1>
+
+	<div id="stage">
+	  <div id="scale"></div>
+	  <div id="arrow"></div>
+	</div>
 
 	<p id="output">I am thinking of a number between 0 and 99.</p>
 	<input id="input" type="text" placeholder="Enter your guess…" autofocus> 
 	<button>guess</button>
 	<script src="./game_logic.js"></script>
+	
+	<footer>By Jae Hyuk Oh </footer>
 </body>
 
 </html>

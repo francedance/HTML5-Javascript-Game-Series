@@ -1,0 +1,92 @@
+button
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: white;
+	padding: 10px 20px;
+	border: 2px solid #000;
+	cursor: pointer;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;	
+	
+	background:-webkit-linear-gradient(top, blue, white);
+	background:-moz-linear-gradient(top, #a3a3a3, #000);
+	background: linear-gradient(top, #a3a3a3, #000);
+	
+	-webkit-box-shadow: 5px 5px 3px rgba(0,0,0,0);
+	-moz-box-shadow: 5px 5px 3px rgba(0,0,0,0);
+	box-shadow: 5px 5px 3px rgba(0,0,0,0);
+	
+	-webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+button:hover
+{
+  background: -webkit-linear-gradient(top, red, white);
+  background: -moz-linear-gradient(top, red, white);
+  background: linear-gradient(top, red, white);
+}
+
+button:active
+{
+  background: -webkit-linear-gradient(top, #858565, #c5c9a9);
+  background: -moz-linear-gradient(top, #858565, #c5c9a9);
+  background: linear-gradient(top, #858565, #c5c9a9);
+}
+
+h1{
+	font-size: 40px;
+	color: blue;
+}
+
+p
+{
+  font-weight: bold;
+  font-size: 30px;
+
+}
+
+input 
+{
+	width: 400px;
+	height: 30px;
+	font-size: 20px;
+	font-weight: bold;
+
+}
+
+#stage
+{
+  width: 600px;
+  height: 33px;
+	position: relative;
+}
+
+#scale
+{
+  width: 600px;
+  height: 33px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: url(./images/scale.png);
+}
+
+#arrow
+{
+  width: 17px;
+  height: 22px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: url(./images/arrow.png);
+  
+  /*Transition*/
+  -webkit-transition: left 0.5s ease-out 0s;
+  -moz-transition: left 0.5s ease-out 0s;
+  transition: left 0.5s ease-out 0s;
+}
