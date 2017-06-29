@@ -1,0 +1,177 @@
+*
+{
+  font-family:gotham ;  
+  padding: 0px;
+  margin: 0px;
+}
+
+@font-face 
+{
+  font-family: gotham;
+  src: url("../fonts/gotham.ttf");
+  
+  /*
+  
+  Note: Firefox requires that the font file
+  be in the same folder as the CSS file.
+  If you are using Firefox, copy the emulogic.ttf font
+  into the src folder and use this src property:
+  
+  src: url("../fonts/emulogic.ttf");
+  
+  */
+  
+}
+
+
+h1
+{
+  text-align: center;
+  font-size: 44px;
+  color: #FFBF00;
+  padding-bottom: 20px;
+  
+  text-shadow: 3px 3px black;
+  
+  -webkit-text-stroke: 1px #000;
+  -moz-text-stroke: 1px #000;
+  text-stroke: 1px #000;
+}
+
+p
+{
+  text-align: center;
+  font-family: aerial;
+  font-size: 22px;
+  padding-bottom: 20px;
+  color: #FFBF00;
+}
+
+input
+{
+  font-size: 25px;
+  font-family: aerial;
+  background-color: black;
+  color: #FFBF00;
+  width: 105px;
+  padding: 5px 10px;
+  border: 1px solid yellow;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;	
+	margin: auto auto;
+}
+
+button
+{
+  font-size: 25px;
+  color: #FFBF00;
+  padding: 5px 10px;
+  border: 2px solid yellow;
+	
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;	
+  background: black;
+	
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+button:hover
+{
+  background-color: #FFBF00;
+  color: #000;
+}
+
+button:active
+{
+  background-color: #9e7606;
+  color: #000;
+}
+
+#game
+{
+  margin: 0px auto;
+  width: 430px;
+  height: auto;
+  padding: 15px;
+  border: black;  
+  
+  background:black;
+	
+	-webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;	
+}
+
+#stage
+{
+  margin: 0px auto;
+  width: 400px;
+  height: 400px;
+	position: relative;
+	
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+	
+	margin-bottom: 20px;
+	border: 1px solid yellow ;
+}
+
+#background
+{
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: url(../images/gotham.png);
+}
+
+#batman
+{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 340px;
+  left: 180px;
+  background-image: url(../images/batman.png);
+}
+
+#joker
+{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 20px;
+  left: 80px;
+  background-image: url(../images/joker.png);
+}
+
+#batarang
+{
+  width: 20px;
+  height: 50px;
+  position: absolute;
+  top: 270px;
+  left: 200px;
+  background-image: url(../images/batarang.png);
+}
+
+#bang
+{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: url(../images/bang.png);
+  display: none;
+}
